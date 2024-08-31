@@ -1,0 +1,7 @@
+{
+  "welcome": "Bienvenido a nuestro sitio web",
+  "login": {
+    "title": "Iniciar sesión",
+    "description": "Por favor, ingresa tus credenciales"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome to our website",
+  "login": {
+    "title": "Login",
+    "description": "Please enter your credentials"
+  }
+}
