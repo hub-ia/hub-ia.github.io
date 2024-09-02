@@ -3,5 +3,7 @@
   "login": {
     "title": "Login",
     "description": "Please enter your credentials"
-  }
+  },
+  "home": "Home",
+  "title-main" : "Artificial Intelligence Hub"
 }

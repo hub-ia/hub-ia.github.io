@@ -3,5 +3,7 @@
   "login": {
     "title": "Iniciar sesión",
     "description": "Por favor, ingresa tus credenciales"
-  }
+  },
+  "home": "Inicio",
+  "title-main" : "Hub de Inteligencia Artificial"
 }

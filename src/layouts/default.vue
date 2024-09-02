@@ -10,7 +10,7 @@
         <template v-slot:prepend>
           <v-list-item
             lines="two"
-            prepend-avatar="https://randomuser.me/api/portraits/women/81.jpg"
+            prepend-avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8G-o9j-BQBaiE2RNLpb1O-S6IDRXeisWfGg&s"
             title="Menu"
             ></v-list-item>
           </template>
@@ -21,16 +21,16 @@
           density="compact"
           nav
         >
-          <v-list-item prepend-icon="mdi-view-dashboard" title="Home" value="home"></v-list-item>
+          <v-list-item to="/" prepend-icon="mdi-view-dashboard" :title="$t('home')" value="home"></v-list-item>
           <v-list-item prepend-icon="mdi-forum" title="About" value="about"></v-list-item>
-          <v-list-item prepend-icon="mdi-brain" title="Ghost" value="ghost"></v-list-item>
-          <v-list-item prepend-icon="mdi-domain" title="Ghost" value="domain"></v-list-item>
-          <v-list-item to="a" prepend-icon="mdi-message-text" title="Ghost" value="textMessage"></v-list-item>
+          <v-list-item prepend-icon="mdi-brain" title="test1" value="ghost"></v-list-item>
+          <v-list-item prepend-icon="mdi-domain" title="test2" value="domain"></v-list-item>
+          <v-list-item to="a" prepend-icon="mdi-message-text" title="Internacionalizacion" value="textMessage"></v-list-item>
           <v-list-item to="b" prepend-icon="mdi-dialpad" title="modal" value="dialpad"></v-list-item>
-          <v-list-item to="/" prepend-icon="mdi-email" title="Ghost" value="email"></v-list-item>
+          <v-list-item to="test" prepend-icon="mdi-email" title="test4" value="email"></v-list-item>
           <v-list-item to="search"  prepend-icon="mdi-call-split" title="buscador" value="callSplit"></v-list-item>
-          <v-list-item to="test"  prepend-icon="$vuetify" title="Ghost" value="vue"></v-list-item>
-          <v-list-item to="test"  prepend-icon="$vuetify-outline" title="Ghost" value="vue-shadow"></v-list-item>
+          <v-list-item to="test"  prepend-icon="$vuetify" title="test5" value="vue"></v-list-item>
+          <v-list-item to="test"  prepend-icon="$vuetify-outline" title="test6" value="vue-shadow"></v-list-item>
         </v-list>
       </v-navigation-drawer>
       <v-app-bar
@@ -43,7 +43,7 @@
 
         <v-toolbar-title>
           <v-icon icon="mdi-brain" />
-          Hub de Inteligencia Artificial</v-toolbar-title>
+          {{$t('title-main')}}</v-toolbar-title>
 
         <!-- <v-spacer></v-spacer> -->
 
@@ -107,7 +107,7 @@
         <v-btn icon="mdi-theme-light-dark" variant="text" @click="changeTheme"></v-btn>
         <!-- <v-btn icon="mdi-dots-vertical" variant="text"></v-btn> -->
       </v-app-bar>
-      <v-main style="height: 500px;">
+      <v-main>
         <router-view />
       </v-main>
     </v-layout>
